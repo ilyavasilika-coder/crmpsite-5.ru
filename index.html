@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">CRMP-сайт5 | Лучшие проекты CRMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">CRMP-сайт5</div>
+            <!-- Переключатель языков -->
+            <select id="language-selector" class="lang-select" onchange="changeLanguage(this.value)">
+                <option value="ru">🇷🇺 Русский</option>
+                <option value="en">🇬🇧 English</option>
+            </select>
+        </div>
+        <p class="subtitle" data-i18n="subtitle">Твой путеводитель по миру Criminal Russia Multiplayer</p>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-btn active" onclick="openTab(event, 'new')" data-i18n="tab_new">Новые</button>
+        <button class="tab-btn" onclick="openTab(event, 'top3')" data-i18n="tab_top3">Топ-3 лучших</button>
+        <button class="tab-btn" onclick="openTab(event, 'catalog')" data-i18n="tab_catalog">Все игры</button>
+    </nav>
+
+    <main>
+        <!-- Вкладка "Новые" -->
+        <section id="new" class="tab-content active-content">
+            <h2 data-i18n="heading_new">🔥 Новые проекты</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Гранд Мобайл</h3>
+                    <p data-i18n="card_grand_new">Современная Россия, новые автомобили и уникальные системы.</p>
+                    <span class="badge new" data-i18n="badge_new">Новинка</span>
+                </div>
+                <div class="game-card">
+                    <h3>Black Russia</h3>
+                    <p data-i18n="card_black_new">Глобальное обновление карты и добавление новых бизнесов.</p>
+                    <span class="badge update" data-i18n="badge_update">Обновление</span>
+                </div>
+                <div class="game-card">
+                    <h3>Матрёшка РП</h3>
+                    <p data-i18n="card_matreshka_new">Перезапуск проекта с улучшенной графикой и новым транспортом.</p>
+                    <span class="badge new" data-i18n="badge_new">Новинка</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вкладка "Топ-3" -->
+        <section id="top3" class="tab-content">
+            <h2 data-i18n="heading_top3">🏆 Топ-3 лучших CRMP проектов</h2>
+            <div class="table-wrapper">
+                <table class="top-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="th_rank">Место</th>
+                            <th data-i18n="th_name">Название игры</th>
+                            <th data-i18n="th_online">Онлайн</th>
+                            <th data-i18n="th_rating">Рейтинг</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">🥇 1</td>
+                            <td><strong>Блэк Раша (Black Russia)</strong></td>
+                            <td>~45 000</td>
+                            <td>9.8 / 10</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">🥈 2</td>
+                            <td><strong>Матрёшка РП</strong></td>
+                            <td>~28 000</td>
+                            <td>9.5 / 10</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">🥉 3</td>
+                            <td><strong>Гранд Мобайл</strong></td>
+                            <td>~15 000</td>
+                            <td>9.2 / 10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Вкладка "Все игры" -->
+        <section id="catalog" class="tab-content">
+            <h2 data-i18n="heading_catalog">🎮 Каталог игр</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Блэк Раша</h3>
+                    <p data-i18n="card_black_cat">Самый популярный мобильный CRMP проект с огромным открытым миром.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Матрёшка РП</h3>
+                    <p data-i18n="card_matreshka_cat">Классика жанра с отличной оптимизацией и дружным комьюнити.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Гранд Мобайл</h3>
+                    <p data-i18n="card_grand_cat">Динамичный геймплей, кланы и масштабные ивенты.</p>
+                </div>
+                <div class="game-card">
+                    <h3>MadOut2 BigCityOnline</h3>
+                    <p data-i18n="card_madout">Мультиплеерный экшен с открытым миром, гонками и свободой действий.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Россия РП</h3>
+                    <p data-i18n="card_russia_rp">Атмосферный проект с упором на реалистичный отыгрыш ролей.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer">&copy; 2026 CRMP-сайт5. Все права защищены. Не является официальным сайтом разработчиков игр.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
